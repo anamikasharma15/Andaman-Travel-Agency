@@ -1,25 +1,106 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './componants/Home/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import Header from './componants/Header/Header';
+
+import Footer from './componants/Footer/Footer';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import NotFound from './componants/NotFound/NotFound';
+// import AboutUS from './componants/AboutUs/AboutUs';
+// import Contact from './componants/Contact/Contact';
+// import Services from './componants/Services/Services';
+// import ServiceDetails from './componants/ServiceDetails/ServiceDetails';
+// import LogIn from './componants/LogIn/LogIn';
+// import Dentists from './componants/Dentists/Dentists';
+// import AuthProvider from './context/AuthProvider';----
+// import PrivateRoute from './componants/PrivateRoute/PrivateRoute';----
+
+ import LogIn from './componants/LogIn/LogIn';
+// import AuthProvider from './Firebase/AuthProvider';
+import AuthProvider from './componants/Context/AuthProvider';
+// import PrivateRoute from './Firebase/PrivateRoute';
+ import './App.css';
+import Contact from './componants/Contact/Contact';
+import Services from './componants/Services/Services';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+             <Route path="/home">
+              <Home></Home>
+            </Route> 
+            <Route exact path="/">
+              <Home></Home>
+            </Route>  
+
+              {/* <PrivateRoute path="/aboutUs">
+              <AboutUS></AboutUS> 
+              </PrivateRoute>  */}
+
+             <Route path="/contact">
+              <Contact></Contact> 
+            </Route>  
+
+             <Route exact path="/services">
+               <Services></Services>
+            </Route> 
+
+             {/* <PrivateRoute exact path="/detail/:detailId">
+               <ServiceDetails></ServiceDetails>
+            </PrivateRoute> */}
+            
+             <Route path="/logIn">
+              <LogIn></LogIn>
+            </Route>  
+
+            {/* <PrivateRoute exact path="/dentists">
+              <Dentists></Dentists>
+            </PrivateRoute>  */}
+
+
+            {/* <PrivateRoute path="/pharmacy">
+              <Pharmacy></Pharmacy>
+            </PrivateRoute> */}
+            
+            {/* <PrivateRoute path="/about/:id">
+              <About></About>
+            </PrivateRoute> */}
+          
+             <Route path="*">
+              <NotFound></NotFound>
+            </Route> 
+          </Switch>
+
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+// // import logo from './logo.svg';
+
+// function App() {
+//   return (
+//     <div className="App">
+      
+//     </div>
+//   );
+// }
+
+// export default App;

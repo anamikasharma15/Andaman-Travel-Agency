@@ -1,0 +1,81 @@
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;  
+}
+
+.carousel-caption h5{
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.carousel-caption p{
+    font-size: 23px;
+    margin: auto;
+    width: 60%;
+    line-height: 1.9;
+    letter-spacing: 2px;
+}
+
+.carousel-caption h5{
+    color: whitesmoke;
+}
+
+.lighter{
+    font-weight: 400;
+    color: #cfd5d8b6;
+}
+
+.fixedImg{
+    background: url('../../images/travel.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 500px;
+}
+
+.margin-text{
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+
+.title{
+    animation: fadeInLeft 2s ease forwards;
+}
+
+.sub-title{
+    animation: fadeInRight 3s ease forwards;
+}
+
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

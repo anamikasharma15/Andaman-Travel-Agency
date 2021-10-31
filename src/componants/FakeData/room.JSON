@@ -1,0 +1,49 @@
+[
+    {
+        "key":"DSCRFAS34",
+        "name":"Classic",
+        "designation":"Dentist",
+        "price":7000,
+        "img":"https://i.pinimg.com/originals/df/5b/ff/df5bff543d156efd90b0569e6ec78cc5.jpg"
+
+    },
+    {
+        "key":"DSCRFAS56",
+        "name":"Budget",
+        "designation":" ",
+        
+        "price":10000,
+        "img":"https://i.pinimg.com/originals/16/c5/47/16c5475a81102af034fab230ff1a75d8.jpg"
+
+    },
+    
+    
+    
+    {
+        "key":"DSCRFAS59",
+        "name":"Luxury",
+        "designation":"Dentist",
+        "price":100,
+        "img":"https://i.pinimg.com/originals/d6/f5/63/d6f5632bb6a8386be89386ba06bba108.png"
+
+    },
+    {
+        "key":"DSCRFAS76",
+        "name":"Double",
+        "designation":" ",
+        "price":8000,
+        "img":"https://images.opoyi.net/opoyi_Q-Au1Gtc6s.jpg?tr=w-345,q-70,dpr-2"
+
+    },
+   
+    {
+        "key":"DSCRFAS90",
+        "name":"Single",
+        "designation":" ",
+        "price":8000,
+        "img":"https://content.fortune.com/wp-content/uploads/2020/11/MH_PVRMX_DSTE_Overall-Guest-Room.jpg?w=1024"
+
+    }
+   
+  
+]
