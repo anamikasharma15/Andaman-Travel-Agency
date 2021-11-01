@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 
+
 const Services = () => {
     const [details, setdetails] = useState([])
     useEffect (()=>{
-        fetch ('/services.JSON')
+        fetch ('https://quiet-sea-18994.herokuapp.com/services')
         .then (res => res.json())
         .then (data => setdetails(data))
     },[])

@@ -22,7 +22,7 @@ function ContactForm() {
       </Bounce>
 
       <Bounce left>
-        <p className="text-center text-muted mb-4">
+        <p className="text-center text-dark mb-4">
           You can easily reach us through filling up the form
         </p>
       </Bounce>

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+// import { Link } from 'react-router-dom';
+
 
 const ServiceDetails = () => {
     const {detailId } = useParams();
     const [eachDetail, setEachDetail] = useState([])
     useEffect (()=>{
-        fetch ('/services.JSON')
+        fetch ('https://quiet-sea-18994.herokuapp.com/services')
         .then (res => res.json())
         .then (data => {setEachDetail(data)})
     },[])
@@ -18,8 +20,11 @@ const details = eachDetail.find(td => td.key === detailId)
             <img src={ details?.img} className=" img-fluid" alt="..." />                  <div className="card-body">
                          <h5 className="card-title">{  details?.name}</h5>
                         <p className="card-text text-danger"> <strong>- { details?.designation} -</strong> </p>
-                        {/* <p className="card-text">Help-Line: {eachDetails?.help}</p>  */}
+                         <p className="card-text">Help-Line: {details?.help}</p>  
                         <p className="card-text">{ details?.description}</p>
+                        <button className="card-text">Book now:{details?.BookingNow}</button>
+                        {/* <Link to={`/detail/${}`}><button>Book Now</button></Link> */}
+
             {/* <img src={exact?.img} alt="" />
             <h1>{exact?.name}</h1> */}
             </div>

@@ -10,7 +10,7 @@ import NotFound from './componants/NotFound/NotFound';
 // import AboutUS from './componants/AboutUs/AboutUs';
 // import Contact from './componants/Contact/Contact';
 // import Services from './componants/Services/Services';
-// import ServiceDetails from './componants/ServiceDetails/ServiceDetails';
+// import ServiceDetail from './componants/ServiceDetail/ServiceDetail';
 // import LogIn from './componants/LogIn/LogIn';
 // import Dentists from './componants/Dentists/Dentists';
 // import AuthProvider from './context/AuthProvider';----
@@ -23,7 +23,11 @@ import AuthProvider from './componants/Context/AuthProvider';
  import './App.css';
 import Contact from './componants/Contact/Contact';
 import Services from './componants/Services/Services';
-
+import ServiceDetails from './componants/ServiceDetails/ServiceDetails';
+import PrivateRoute from './componants/PrivateRoute/PrivateRoute';
+import AddANewService from './componants/AddANewService/AddANewService';
+import Orders from './componants/Orders/Orders';
+import ManageOrders from './componants/ManageOrders/ManageOrders';
 
 
 function App() {
@@ -52,17 +56,28 @@ function App() {
                <Services></Services>
             </Route> 
 
-             {/* <PrivateRoute exact path="/detail/:detailId">
+              <PrivateRoute exact path="/detail/:detailId">
                <ServiceDetails></ServiceDetails>
-            </PrivateRoute> */}
+            </PrivateRoute> 
             
-             <Route path="/logIn">
+            <Route path="/logIn">
               <LogIn></LogIn>
-            </Route>  
+            </Route> 
 
-            {/* <PrivateRoute exact path="/dentists">
-              <Dentists></Dentists>
-            </PrivateRoute>  */}
+            <Route path="/addANewService">
+              <AddANewService></AddANewService>
+            </Route> 
+            <Route path="/orders">
+              <Orders></Orders>
+            </Route> 
+            <Route path="/manageOrders">
+              <ManageOrders></ManageOrders>
+            </Route> 
+        
+
+             {/* <Route  path="">
+              <ManageOrders></ManageOrders>
+            </Route>   */}
 
 
             {/* <PrivateRoute path="/pharmacy">

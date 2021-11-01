@@ -1,14 +1,14 @@
 [
     {
-        "key":"DSCRFAS1",
+        "id":"DSCRFAS1",
         "name":"Singapore",
         "description":"Torisum in Singapor is a major industry and contributor to the Singpore economy.",
-        "details":"Tooth whitening is a great way to get back that stunning white smile and make you feel so much more confident around others.Teeth age with time and they get less white as we get older. Thankfully tooth whitening is an easy, affordable way to get that fresh, young smile back.",
+
         "img":"https://top10tale.com/wp-content/uploads/2016/04/singapore-tourist-attraction.png"
 
     },
     {
-        "key":"DSCRFAS2",
+        "id":"DSCRFAS2",
         "name":"United Arab ",
         "description":"Turism in the Arab World encompasses a wide array of activities",
         
@@ -19,7 +19,7 @@
 
     },
     {
-        "key":"DSCRFAS3",
+        "id":"DSCRFAS3",
         "name":"London",
         "description":"London is one of the worlds leading torisum destination",
         "details":"Cosmetic dentistry is a broad term used to describe different dental techniques to restore your teeth and smile, with the focus being on achieving the best aesthetic, functional result",
@@ -28,7 +28,7 @@
 
     },
     {
-        "key":"DSCRFAS4",
+        "id":"DSCRFAS4",
         "name":"Paris, France",
     
         "description":"Paris is the captial  and most popular city of Francie",
@@ -37,7 +37,7 @@
         "img":"https://www.planetware.com/photos-large/F/france-paris-eiffel-tower.jpg"
     },
     {
-        "key":"DSCRFAS5",
+        "id":"DSCRFAS5",
         "name":"San Francisco",
         "description":"San Francisco officially the City and Countryn of San Franciso, is a  cultural ,commercial U.S State",
         "details":"Dental implants are well-accepted and long term solution for replacing missing teeth. Placed directly into the jaw bone, a dental implant provides a replacement for the root of a missing tooth or teeth. A dental implant can support crowns or dentures, in a similar way that roots support natural teeth.",
@@ -46,7 +46,7 @@
 
     },
     {
-        "key":"DSCRFAS6",
+        "id":"DSCRFAS6",
         "name":"Nepal",
         "description":"Nepal is the largest industry in torisum and  its largest source of foreign exchange ",
         "details":"We provide a range of bespoke facial aesthetics and skin treatment choices, uniquely tailored to the individual for long-lasting and natural results.With treatment times on average from 20-30 mins and results lasting for 6-9 months, its no wonder that these treatments are increasing in their popularity. Before we discuss any treatments we first carry our FREE skin consultation where you get to meet our facial aesthetics expert and tell them what results you’re looking for.",
@@ -55,7 +55,7 @@
 
     },
     {
-        "key":"DSCRFAS7",
+        "id":"DSCRFAS7",
         "name":"India",
         "description":"India is great torisum place.It has different torist placem",
         "details":"Orthodontics and Invisalign (a popular system) is a great way to get that great confident smile. If teeth are crowded a malpositioned, sometimes the only way to improve your smile is to delicately move the teeth into their best-desired positions.",
