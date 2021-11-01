@@ -11,10 +11,7 @@ import NotFound from './componants/NotFound/NotFound';
 // import Contact from './componants/Contact/Contact';
 // import Services from './componants/Services/Services';
 // import ServiceDetail from './componants/ServiceDetail/ServiceDetail';
-// import LogIn from './componants/LogIn/LogIn';
-// import Dentists from './componants/Dentists/Dentists';
-// import AuthProvider from './context/AuthProvider';----
-// import PrivateRoute from './componants/PrivateRoute/PrivateRoute';----
+// import LogIn from './componants/LogIn/LogIn;
 
  import LogIn from './componants/LogIn/LogIn';
 // import AuthProvider from './Firebase/AuthProvider';
@@ -64,15 +61,16 @@ function App() {
               <LogIn></LogIn>
             </Route> 
 
-            <Route path="/addANewService">
+            <PrivateRoute path="/addANewService">
               <AddANewService></AddANewService>
-            </Route> 
-            <Route path="/orders">
+            </PrivateRoute>
+
+            <PrivateRoute path="/orders">
               <Orders></Orders>
-            </Route> 
-            <Route path="/manageOrders">
+            </PrivateRoute> 
+            <PrivateRoute path="/manageOrders">
               <ManageOrders></ManageOrders>
-            </Route> 
+            </PrivateRoute> 
         
 
              {/* <Route  path="">
